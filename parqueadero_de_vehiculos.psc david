@@ -1,0 +1,23 @@
+Algoritmo parqueadero_de_vehiculos
+	definir contador , vehiculo como entero
+	definir placa , hora , color como cadena
+	escribir "numero de vehiculos que ingresan al parqueadero"
+	leer vehiculo;
+	
+	Para contador <- 1 Hasta vehiculo Con Paso 1 Hacer
+		
+	Escribir "color de vehiculo"
+	leer color;
+	Escribir "placa del vehiculo"
+	leer placa;
+	escribir "hora de entrada de los vehiculos"
+	leer hora;
+	
+FinPara
+Escribir "parqueadero"
+Escribir "carros  en el parqueadero",vehiculo;
+Escribir "placa" , placa;
+Escribir "hora de entrada" ,hora;
+Escribir "color del vehiculo" color;
+
+FinAlgoritmo

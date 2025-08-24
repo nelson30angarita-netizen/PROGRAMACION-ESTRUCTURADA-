@@ -1,0 +1,30 @@
+Algoritmo tienda_virtual
+		Definir precio, cantidad, subtotal, total Como Real
+		Definir opcion_ Como Caracter
+		
+		total <- 0
+		
+		Escribir "=== Bienvenido a la tienda en línea ==="
+		
+		opcion_ <- "S";
+		
+		Mientras opcion_ = "S" o opcion_ = "s" Hacer
+			Escribir "Ingrese el precio del producto:"
+			Leer precio
+			Escribir "Ingrese la cantidad de unidades que desea comprar:"
+			Leer cantidad
+			
+			subtotal <- precio * cantidad
+			total <- total + subtotal
+			
+			Escribir "Subtotal de este producto: $", subtotal
+			Escribir "Total acumulado hasta ahora: $", total
+			
+			Escribir "¿Desea agregar otro producto? (S/N)"
+			Leer opcion_
+		FinMientras
+		
+		Escribir "================================="
+		Escribir "El costo total de la compra es: $", total
+		Escribir "Gracias por su compra."
+FinAlgoritmo	

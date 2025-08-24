@@ -1,0 +1,25 @@
+Algoritmo Agenda_De_Contactos_bucle
+    Definir nombre, telefono, listadeContactos Como Cadena
+    Definir opcion Como Cadena
+	
+    Repetir
+        Escribir "Ingrese el nombre del contacto:"
+        Leer nombre
+		
+        Escribir "Ingrese el número de teléfono del contacto:"
+        Leer telefono
+		
+        listadeContactos <- listadeContactos + nombre + " - " + telefono + "\n"
+		
+        Escribir "¿Desea agregar otro contacto? (S/N):"
+        Leer opcion
+		
+    Hasta Que (opcion) = "N"
+	
+    Escribir "--------------------------------"
+    Escribir "Lista de contactos registrados:"
+    Escribir listadeContactos
+    Escribir "Fin del programa."
+FinAlgoritmo
+
+

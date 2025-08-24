@@ -1,0 +1,29 @@
+Algoritmo tiendavirtual_bucle
+		Definir nombreProducto Como Cadena
+		Definir precioProducto, total Como Real
+		Definir opcion Como Cadena
+		Definir listaProductos Como Cadena
+		
+		total <- 0
+		listaProductos <- ""
+		
+		Repetir
+			Escribir "Ingrese el nombre del producto:"
+			Leer nombreProducto
+			
+			Escribir "Ingrese el precio del producto:"
+			Leer precioProducto
+			
+			total <- total + precioProducto
+			listaProductos <- listaProductos + nombreProducto + " ($" + ConvertirATexto(precioProducto) + "), "
+			
+			Escribir "¿Desea agregar otro producto? (S/N):"
+			Leer opcion
+			
+		Hasta Que Mayusculas(opcion) = "N"
+		
+		Escribir "--------------------------------"
+		Escribir "Lista de productos: ", listaProductos
+		Escribir "Total a pagar: $", total
+		Escribir "Gracias por su compra."
+FinAlgoritmo

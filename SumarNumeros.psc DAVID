@@ -1,0 +1,29 @@
+Algoritmo SumarNumeros
+    Definir numero, suma Como Real
+    Definir opcion Como Cadena
+	
+    suma <- 0
+	
+    Repetir
+        Escribir "Ingrese un número:"
+        Leer numero
+		
+        Mientras numero < -9999999  o numero > 9999999 Hacer
+			
+            Escribir "Por favor ingrese un número válido."
+            Escribir "Ingrese un número:"
+            Leer numero
+        FinMientras
+		
+        suma <- suma + numero
+		
+        Escribir "¿Desea ingresar otro número? (S/N):"
+        Leer opcion
+		
+    Hasta Que Mayusculas(opcion) = N
+	
+	Escribir "la suma de todos los numeros ingresados es:", suma
+	Escribir "fin del programa." 
+	
+FinAlgoritmo
+
